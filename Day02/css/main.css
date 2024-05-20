@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navHeight: 10vh;
+    --headerHeight: 90vh;
+}
+
+html {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+nav, header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    height: var(--navHeight);
+    top: 0;
+    left: 0;
+    line-height: var(--navHeight);
+    background-color: black;
+    z-index: 1;
+}
+
+header {
+    height: var(--headerHeight);
+    top: 10vh;
+    left: 0;
+    line-height: var(--headerHeight);
+    background-color: rgb(198, 38, 29);
+}
+
+main {
+    position: relative;
+    width: 100%;
+    top: 100vh;
+    left: 0;
+    height: 200vh;
+    line-height: 200vh;
+    background-color: lightseagreen;
+    background-image: linear-gradient(45deg, lightseagreen, gold, tomato);
+}
