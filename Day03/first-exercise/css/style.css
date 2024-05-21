@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.picture {
+    /*     
+    position: absolute; 
+    top: calc(50% - 45vh/2);
+    left: calc(50% - 80vh/2);
+    */
+    position: relative;
+    width: 80vh;
+    height: 45vh;
+    margin: 5% auto;
+    background-color: rgb(168, 233, 255);
+    overflow: hidden;
+    z-index: -2;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.mountain {
+    top: 5%;
+    left: 15%;
+}
+
+.first-big-gray-mountain {
+    top: 20%;
+}
+
+.second-big-gray-mountain {
+    top: 32%;
+}
+
+.third-big-gray-mountain {
+    top: 28%;
+}
+
+.fourth-big-gray-mountain {
+    top: 40%;
+}
+
+.fifth-big-gray-mountain {
+    top: 70%;
+}
+
+.sun {
+    width: 10%;
+    top: 3%;
+    left: 14%;
+    z-index: -1;
+}
+
+.left-cloud {
+    width: 33%;
+    top: 10%;
+    left: -3%;
+}
+
+.right-cloud {
+    width: 33%;
+    top: 3%;
+    right: 3%;
+}
+
+.branch {
+    width: 37%;
+    top: 20%;
+    right: 0;
+}
+
+.signs {
+    width: 7%;
+    top: 60%;
+    left: 5%;
+}
