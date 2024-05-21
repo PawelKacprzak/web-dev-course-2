@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    top: calc(50% - 15vw);
+    left: calc(50% - 15vw - 10px);
+    border: 10px solid black;
+    font-size: 0;
+}
+
+span {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+.first, .fourth {
+    background-color: red;
+}
+
+.second, .third {
+    background-color: white;
+}
+
+h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    font-family: arial;
+    font-size: 40px;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.board {
+    width: 30vw;
+    border: 10px solid black;
+    margin: 50px auto;
+}
+
+span {
+    float: left;
+    width: 50%;
+    height: calc(15vh - 10px);
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
