@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    position: absolute;
+    width: 120px;
+    top: 5%;
+    left: calc(50% - 60px);
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+    background-color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.square {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: left 0.5s, top 0.5s 0.5s;
+}
+
+/* button:hover+.square {
+    width: calc(10px * 10);
+    height: 100px;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background-color: magenta;
+} */
+
+button:hover+.square {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+}
