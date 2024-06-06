@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 50px;
+    font-size: 22px;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+div:nth-of-type(1) {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+span:hover ~ div:nth-of-type(1) {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+div:nth-of-type(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+span:hover ~ div:nth-of-type(2) {
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+div:nth-of-type(3) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+span:hover ~ div:nth-of-type(3) {
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+div:nth-of-type(4) {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(94, 0, 0);
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+span:hover ~ div:nth-of-type(4) {
+    top: 75.4%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+div:nth-of-type(5) {
+    position: absolute;
+    width: 425px;
+    height: 425px;
+    background-color: rgb(27, 27, 27);
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+span:hover ~ div:nth-of-type(5) {
+    top: 35.5%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(45deg);
+    z-index: -1;
+}
+
+div:nth-of-type(6) {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: rgb(88, 88, 88);
+    top: 100%;
+    left: 0;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+span:hover ~ div:nth-of-type(6) {
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: -2;
+}
